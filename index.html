@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover" />
+  <title>The Official Shreeya Lovability & Prettiness Accreditation Exam 2026</title>
+  <meta name="description"
+    content="Official Romantic Accreditation Exam for Candidate Shreeya (Shree). Standardized testing in cuteness, lovability, and absolute beauty." />
+
+  <!-- Favicon: Baby Pink Heart -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>" />
+
+  <!-- Google Fonts: Plus Jakarta Sans & Dancing Script -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,600;0,700;0,800;0,900;1,400;1,700&display=swap"
+    rel="stylesheet" />
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- Floating Ambient Particles (Hearts, Sparkles, Petals) -->
+  <canvas id="ambientCanvas"></canvas>
+
+  <!-- High-Energy Confetti Cannon Canvas -->
+  <canvas id="confettiCanvas"></canvas>
+
+  <!-- Application Container -->
+  <main class="app-container" id="mainContainer">
+
+    <!-- Official Exam Header & Status Bar -->
+    <header class="exam-header" id="examHeader">
+      <div class="header-top">
+        <div class="brand-badge">
+          <div class="seal-icon" aria-hidden="true">🎀</div>
+          <div class="exam-titles">
+            <h1>MINISTRY OF CUTENESS & ROMANTIC AFFAIRS</h1>
+            <p>Official Standardized Accreditation Exam • Series 2026-SR</p>
+          </div>
+        </div>
+
+        <div class="header-controls">
+          <div class="candidate-pill">
+            <span>Candidate:</span>
+            <strong>Shreeya (Shree) ✨</strong>
+          </div>
+          <div class="timer-pill" title="Time under Naio's Supervision">
+            <span>⏱️</span>
+            <span id="timeElapsed">00:00</span>
+          </div>
+          <button class="icon-btn" id="btnSoundToggle" title="Toggle Sound Effects"
+            aria-label="Toggle Sound Effects">🔊</button>
+          <button class="icon-btn" id="btnMusicToggle" title="Play Romantic Background Tune"
+            aria-label="Play Romantic Background Tune">🎶</button>
+        </div>
+      </div>
+
+      <!-- Exam Progress Bar -->
+      <div class="progress-section">
+        <div class="progress-track">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="progress-label" id="progressLabel">1 / 15</div>
+      </div>
+    </header>
+
+    <!-- Main Exam Question Stage -->
+    <section class="exam-stage" id="examStage">
+      <article class="card-panel" id="cardPanel">
+        <!-- Section Code Badge -->
+        <div class="section-code-pill" id="sectionPill">SECTION I: COSMIC BEAUTY STANDARDS • ITEM 1.01</div>
+
+        <!-- Question Title & Subtitle -->
+        <h2 class="question-title" id="questionTitle">Loading exam question...</h2>
+        <p class="question-subtitle" id="questionSubtitle">Please answer honestly.</p>
+
+        <!-- Dynamic Question Content Area -->
+        <div class="question-body" id="questionBody"></div>
+
+        <!-- Instant Reaction / Feedback Banner -->
+        <div class="feedback-banner" id="feedbackBanner">
+          <div class="feedback-icon">💖</div>
+          <div class="feedback-text" id="feedbackText">Feedback will appear here.</div>
+        </div>
+
+        <!-- Navigation Footer -->
+        <div class="card-nav-footer">
+          <button class="btn-secondary" id="btnPrev" style="visibility: hidden;">❮ Previous</button>
+          <button class="btn-primary-next" id="btnNext" disabled>Next Question ➜</button>
+        </div>
+      </article>
+    </section>
+
+    <!-- Graduation & Official Certificate Screen -->
+    <section class="graduation-container" id="graduationView" aria-label="Graduation & Certificate">
+      <div class="cert-card-frame" id="certificateFrame">
+        <!-- Ornate Corners -->
+        <div class="cert-corner-decor cert-corner-tl"></div>
+        <div class="cert-corner-decor cert-corner-tr"></div>
+        <div class="cert-corner-decor cert-corner-bl"></div>
+        <div class="cert-corner-decor cert-corner-br"></div>
+
+        <div class="cert-header-tag">✨ Official Accreditation Document ✨</div>
+        <h2 class="cert-main-title">CERTIFICATE OF SUPREME PRETTINESS & LOVABILITY</h2>
+        <p class="cert-sub">Issued under the Permanent Romantic Jurisdiction of Naio</p>
+
+        <div class="cert-recipient-wrap">
+          <div class="cert-for-label">THIS HONORED DISTINCTION IS HEREBY CONFERRED UPON</div>
+          <div class="cert-name-highlight">Shreeya</div>
+          <div class="cert-nickname-tag">Our beautiful Shree 🌸</div>
+        </div>
+
+        <p class="cert-statement">
+          Having undergone rigorous aesthetic examination, behavioral testing, and quantum lovability verification,
+          the candidate has demonstrated an insurmountable score of <strong>1000/100 (A+++++)</strong>.
+          It is hereby permanently decreed that Shree is the sweetest, prettiest, and most irreplaceable person in
+          existence,
+          and is loved by Naio beyond the boundaries of time, space, and all human vocabulary.
+        </p>
+
+        <!-- Certified Metrics Grid -->
+        <div class="cert-stats-grid">
+          <div class="stat-metric-card">
+            <div class="stat-metric-val">1000%</div>
+            <div class="stat-metric-label">Cosmic Beauty</div>
+          </div>
+          <div class="stat-metric-card">
+            <div class="stat-metric-val">Infinite</div>
+            <div class="stat-metric-label">Cuteness Index</div>
+          </div>
+          <div class="stat-metric-card">
+            <div class="stat-metric-val">100%</div>
+            <div class="stat-metric-label">Heart Melting Rate</div>
+          </div>
+          <div class="stat-metric-card">
+            <div class="stat-metric-val">1000 / 10</div>
+            <div class="stat-metric-label">Selfie Radiance</div>
+          </div>
+          <div class="stat-metric-card">
+            <div class="stat-metric-val">∞ / 10</div>
+            <div class="stat-metric-label">Devotion from Naio</div>
+          </div>
+        </div>
+
+        <!-- Signatures & Official Gold Wax Seal -->
+        <div class="cert-signatures">
+          <div class="sig-block">
+            <div class="sig-drawing">Naio 💖</div>
+            <div class="sig-line"></div>
+            <div class="sig-title">Certified Chief Admirer & Loverboy</div>
+          </div>
+
+          <div class="cert-gold-seal" aria-label="Official Gold Seal">
+            <span class="seal-text-top">OFFICIAL</span>
+            <span class="seal-star">★ 100 ★</span>
+            <span class="seal-text-bot">SHREE 2026</span>
+          </div>
+
+          <div class="sig-block">
+            <div class="sig-drawing">Shreeya ✨</div>
+            <div class="sig-line"></div>
+            <div class="sig-title">Certified Prettiest Girl in the World</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="grad-actions-bar">
+        <button class="btn-love-letter" id="btnOpenLetter">Read Naio's Personal Love Letter 💌</button>
+
+        <button class="btn-secondary" id="btnRetake">Retake Exam 🔄</button>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Love Letter Modal Overlay (Strictly Hidden until button clicked) -->
+  <aside class="modal-overlay" id="loveLetterModal" aria-hidden="true" role="dialog">
+    <div class="letter-envelope-modal">
+      <button class="btn-close-modal" id="btnCloseLetter" aria-label="Close Letter">✕</button>
+      <h3 class="letter-title">To my sweetest Shree,</h3>
+      <div class="letter-body">
+        <p>
+          My dear Princess, I love you more than anything else. You mean quite literally everything and more to me. You
+          are Meri Jaan, Rooh, my soul. </p>
+        <p>
+          You are truly the most beautiful, breathtaking, gorgeous and amazing woman I could ever ask for that you
+          really are. I truly believe in my heart and soul, that no one else hoists no beauty but you. A lot of times
+          you don’t feel well about yourself, like for example when you wake up and your hair is messy, you feel the
+          need to fix it before showing me. Princess, I love your natural self just as much as any other part of
+          you the same way unconditionally and without decrease. My love is never ending for you. And to me, if your
+          hair is messy when you wake up for example, I’d love to see it too like that, natural, because I really do adore
+          you to my more than full in any state you are.
+        </p>
+        <p>
+          I really hope, that one day, someday, sometime, soon, that you will get the opportunity to view from my eyes
+          just how perfectly perfect you are, just how gorgeous and beautiful you are, to see your entire self the way I
+          view you and think of you every single moment of my life. I love you Shree, with more than all of me,my
+          Princess, my Queen, my Wifey.
+
+        </p>
+        <p
+          style="text-align: right; font-family: var(--font-cursive); font-size: 1.8rem; color: var(--rose-primary); margin-top: 18px;">
+          With all my love,<br />
+          Hubby Naio
+        </p>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Scripts -->
+  <script src="sound.js"></script>
+  <script src="questions.js"></script>
+  <script src="app.js"></script>
+</body>
+
+</html>

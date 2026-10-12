@@ -1,0 +1,13 @@
+{
+  "name": "shree-exam",
+  "version": "1.0.0",
+  "description": "The Official Shreeya Lovability & Prettiness Accreditation Exam",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": ["shreeya", "exam", "romantic", "love"],
+  "author": "Antigravity",
+  "license": "ISC"
+}
